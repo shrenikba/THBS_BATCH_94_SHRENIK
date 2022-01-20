@@ -34,8 +34,12 @@ public class PersonDAOImpl implements PersonDAO {
 		return entityManager.createQuery(cq).getResultList();
 	}
 
-	public Person gtPersonById(long aadhar) {
-		// TODO Auto-generated method stub
+	public Person getPersonById(long aadhar) {
+		for(Person person:getAllPerson()) {
+			if(person.getAadhar() == aadhar) {
+				return person;
+			}
+		}
 		return null;
 	}
 
