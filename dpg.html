@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remake For You </title>
+<link rel="stylesheet" href="dpg.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+<nav id="topbar">
+            <div id="left-menu">
+                <div id="logo"><a href="/index.html"><span>RE.</span>MAKE</a></div>
+                <a href="#clothing-section">Clothing</a>
+                <a href="#accessory-section">Accessories</a>
+            </div>
+            <div id="search-wrapper">
+                <i class="fas fa-search" aria-hidden="true"></i>
+                <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories">
+            </div>
+            <div id="right-menu">
+                <div id="cart-wrapper">
+                    <p id="cart-count">0</p>
+                    <a href="/checkout.html"><i class="fas fa-shopping-cart" aria-hidden="true"></i></a>
+                </div>
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBIREhISEhISGBISEhIYEhISEhgRERIYGBQZGRgYGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTQBDAwMEA8QHxISHjUrJCs3NDo0NDE0NDQxNDQ0NDE0NjQ0NDE0NDQ0MTY0PTQ0NDQ0NDQ0NDQ0NDQ0NDQxNDQ0Mf/AABEIAOsA1wMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQMEBQYCBwj/xABIEAACAQIDBAYGBgULBAMAAAABAgADEQQSIQUGMUETIlFhcYEyUpGhsdEUI0JyweEHM2Jz8BUkQ0RTY4KSk7LSVIPC8Raio//EABoBAQACAwEAAAAAAAAAAAAAAAACAwEEBQb/xAArEQACAQMEAQMEAQUAAAAAAAAAAQIDERIEITFRQRMiMnGBkbFhBSNCodH/2gAMAwEAAhEDEQA/APZoQhACEIQAhCEAIQhACEJyzAC5IA79BAFhIVTaVJftXP7Osh1tuKuuWw7XYKJNUpvhFbqwjyy5iTKVt8Ka/wBJhx41Ax9xkf8A+bU/7XD+0/OWLTVH4IPUQ7NpCZClvijcHw7eFQKfeZYUd41PpIbdqsHEw9PUXgKvB+S/hK6htig+mcA9jdX4yeGB1EqlFrlFqknwzuEITBIIQhACEIQAhCEAIQhACEIQAhCEAIQiQAkfFYqnSUs7BVHMn4dsqdt7wph7olmqDjr1U+8fwmPpDE7QbPnIpk/r3HUtzFJODePDxl9Og5LKWyKKlZJ2juzQbR3vRfQAUcA9Ti33V4/xwlWuIxuK1Sk+U8KmJboqfiqasfYJZ7P2NQw/WVS9S2tWoc7nw5KO5QJZq8uyjH4L7srxlL5P7FIm79d/1uLYX+zh0yDwzm5MQ7m4Mm7q7t61SozGaAPG3eR9Sb8mVSgvBTDdbAD+rJ5lj+MG3YwJ/qyeRYfjLJnnHSRnLtjCHSKatudgW/o2X7rsPjK6ruLTU3oYiqjcuDD3WM1JeIXklVmvJF04PwY99kbToehUp10HInr+xrH3wwm81TDsFq06tBvAtSPiP/c1+eN10RwVdVZTyYBh75Yq19pq5D0rbxdh7Zm9COAXsVP9InWXzHKaKjVVwGVgVPAg3E83xW7CKS+EdqL8cl89Jv8ACeAjeA27WwrinXHRVDwbjh6vgeEhKhGe8Hv0ShWlHaa27PUYSr2XtZawCmyvb0b6HvU85aTSlFxdmbcZKSuhYQhMEghCEAIQhACEIQAhCJACZDebeZaYdKbWy6VKnJe1V7THd7NuikrUkazW+se/oLbgP2jMVsDBHGVOnqA/R6bfV0zwqOObdoH5ds3KFBJepPjwalas28I8k/Y+yGxFq2IUikdadE+lU/bqd3Yvtmrz20HAcBwAtwFoyzxsvMzk5O7MRioqxILznpJGNScl5ixLImdPOWrSGXnBqQomMiUakTPInSQ6SZxMZErPE6SRukh0kYi5J6SHSSN0kOkiwuSekjWKpU6qGnUUMh4qwuPEdh7430kOkmUrGGyienUwBBBd8LfQ8auH/wCSibnYW21rBVZgSwujj0XHzlEWBBB1B4jtmeqXwFTMtzhajdZRxosftL3d0scVVVnz4IJum7rg9diyl2HtQVlCsQWyghgdHXkRLmc6UXF2ZvQkpK6FhCEwSCEIQAhCEAS8qtu7TGHpFhq7aIO/t8BxloxtPKt9tuFmcqdNUpdwHpP4/lL9PS9Sdnwa9erhHbkodoV3xddaCMTmfrvxzNe7Me4az0DCUUpU0p0xZEUAfP23Mx25ez9alZhqFyJ3E6sfG1h5zVdP1bc+E3q7u8VwjUoqyyfLH2e50jTPaKmg7+caxNQcOcoSL2xS85LyOXnBqSeJDIkGpOC8jl5N2NhPpFYIfQUZn8By8zDtFXYXudkdYbDVavoIxHbwX2mTk2DiDxCDvL3t7BNXTpKoCqAAOAAsBHJqOtLwbCoryY7aOyHoIHvnFzmyrYILaHjqJV556GwB0PA8jPPdq0OgrvT+yCGT7raj2ajyllGo5bMhVgo7oTPDPIvSQ6SbNijIlZ4Z5F6SKHmLC5KzTjEoKiMjC4YGM550HmbWFyq3c2g2GrfRXYizXoOeV9cnhx989WwOKFVAw48COw8xPGt6qNjTqrob8RoQeIM2+5W2ulRGJ1ayVR2OODef4zGop5wzXIoVMZYvg3MIgizmnRCEIQAhCJAKXejG9FhyAetUORe64uT5AGeOYl+nrsfsJ1V7NPzuZuv0gbQszAHSklh99/4Ew2y16nfmN+/hOtpYYU79nK1MsqlujY7BTJQX9osx9v5R7P1sxHVvxkbBPahTA4+iPG5k4KLZeVpXLlstjwhzNK6pVuSZ1iWKCwY2a+h1t5yEXmYxMSkPl5wXjBecGpJ4kGx81JpNyXvUqj+7T/cZki80W4xY4h7Dqimcx7CWFvxldZf22Tov3o30WESc06ITAb8vbFJbj0Iv/nNpv55pv5mGMueBpJk14gFr+8y/TK9RFGodoMrExF+PGO55UF45TxVtG9vznSxOepFoHiipIYqToPI4ksiWKk6DyGHnQqTGJm4xt8ZqD/slT75A3Ox/RYgIT1KwynsDDVG+I85M2q96NQdq/CZZWKkEaFSCD2EcJfTjeDRTOVpJn0Ps+vnpqTxGh8RJUzG6G0RVRT/aU1cDsPBh7fhNPONVhjNo61KWUUxYQhKywSIYsjY+pkpVG9VHPsBmVu7GG7I8e3zxedyfXqu3kui/GVux21Ze4EeWkTeB71EX1UHvMiYeqabq45HUdo5id9QtCyOG5e+5rdkYjNUal/ZjOP8AFpb4S6vMpsV7mpUB6zVL2vqANADNNSqBxceY7JqVY2Zt05XRB2lU64HYPj/AkIvFx73qP3G3ukUvJxjsVyluPGpOC8aLzkvJqJHIcLzU7gYhRXqoTqyDKO3KdfcRMeXiLVZTmVmVhqGVirDvBGokalPKDRKnUxkme5RIxgXzUqbXvmRTe979Uc5InG4OsmJPMf0hYlWxaoDqlJQ3cWYkDxt8Z6Btmtkw1d82XLRqEMDYghTYg8jeeIFybkkljqzMxd2Y8SzHVj3mbmjp5Ty6NPVzxjj2OGpOS8aLTgtOpY52RJp4kr3jsk2liFbgfLnKYvOektDjcypWNAHnQeUdPaLDiMw9hkgbTX1W90g4Mkpok7Uq/Vt3iw85npLxeKNQjko4D8THMXhejo0yR1me5810Esj7VYrk8nc136PsdlyKT6FUr/hf8yZ6tPCt1q5R3tyyMPEGe5U3uARzAPtnL10bTTOjo5Xi0OQhCaRuiSt2+1sNX/dt79JZSt3gW+Gr/u292slD5IhP4s8P26fr27lX4SIjAyVt0fXN91fhK8GehXBw29yWjspupIPaDaTcNtivTNwwPaGUa+YlalTt9sdAkXFPkKTXDLf6WKpLcCTcr2QLSqUW4SQmIP2vbMYW4JZ9kwtOS0ZzgyTgMFVxLZKKMzd2iqO1mOgEw7RV2E23ZDJadUUao6U1F2dgqKOJJm32ZuBwbE1b/sUtB5udfYBNds7ZGHwwtRpqp5ta7HxY6zUqayC2juzZp6WcvlshvYGzmw2Hp0mcuyg3J4C5vlHcOAlnACLOW2222dNJJWRTbz7KbF4ZqKuVJIItwa2oVu4meL10am7I4IdGKup4qQbEGfQFpXbU2JhsULVqSseTWs48GGs2tNqfS2a2NbUUPU3T3PC2acEz0Pav6OuLYar/ANurw8Aw4eYMxG0Nn1cO5SsjI/YdQR2qRoR3idWnXp1PizmVKM4cogETkiPFYhWXFY1aFp2VnJmCRN2NhRUqqDay9a3rWPD2yz3np2pIf7wf7WlHgMT0danU5K4v906N7jNRvmmWjT/e/BGlErqaLIpODKLd4/WMO1D8RPdtnm9Kme1E/wBonhO7w+sb92fiJ7ts8WpUx2In+0TU/qHg2tD5JMIQnNOiJI20KealUX1qbj2qZKiGE7O5hq6seA7wL9Yresg9xlVNNvhhMj29So6eR1X3CZkT0VN3imcKatJoW0cRiPlOJ2BLLFVyQjg+MctIYEeRyO8d8ziLkzCYZqrpTQXd2Cr4me0bC2RTwlFaaDW3Xc+k55k/LlPNdwSjY6nm0ISoVB5tbl5Xnrs5H9QqPJQ8HT0MFi5eRYQhOedAWESEAWJCEALSn3h2LTxlFqbgZhrTcelTYcCO7kRzEuITMW4u6IyipKzPn+vQZHZHFmRirDvBsfhGis0O+lNRj8TltbNTLW5M1NSw/HzmfdwO+ehpSzgpdnCqLGbj0cMJHdr+E6diZwRJ4kLjZmz32b+b4Ptfrf8A5r/ymNcaHwmt39bK2Epc6eGUkdhYD/jKZr3x+5fB+xlZu1Tu7ntCqPEme7UlsoHYAPYJ5BuLhMz0tPTrBj91NfiJ7FOdr5XkkbuijaLYsIQmibwRIsIB5x+kHZ93cgfrEDD7ycfw9s80Anum9eC6WgWAu1I5h3i1mHs18p4xtPDdHUYfZPWXwPy4Ts6KeULdHH1cMZ37IgEWAE6Am+kabFURxVgqx1VmbmB7CYeqxLUkqE07FmpqxNMa6kr6PA690sKe0MeUNQVsV0amxcO+QHTQtwvqPbLfcyv0aYtj6JOER/uvUdG9zSZiaZw2CqYZ1BFE4V6i8QzPiybHxVV9s51ass3FxT3RvUqTwUlJrkzybaxXPEVz/wB1/nJFDaeKdgiVcUzm9lSo7sbamwBvJu29nUsOlV1VbYmrSGF55UyZ3Ye3L42ne7VF6dLEYhGpq4Ap0XqsEQFiC5uRxCiJTp4OSiglUyUXJledqYgEg4muCNCDVcEHmCCZ1/KeI/6mt/rP85dYvZlMYrE1OjWon0c4ilTU3WozaEXXiA1zp2iRqOFRy9ZsGFNPCGolDMclZ75cwT0gg7O+QVSk1fH9fgm4VL2yK7+UsT/1Ff8A1n+c4bauIH9Zrf6z/OWdLCU2arVODCmnhVdMOWJWqxYjOF9ILpw7o6mzaLtTY0FV6uCxLmiA2UMhCoyqdRe97TPqUlzH9GMKj/y/ZRNtjED+tV/Kq/zjL7bxR0GIxBv/AHrm/sMv9lbKpt/JoqUtay4o1QwKs2W2S/ZYGJss0nGz8SuHpo74voyqlipGTMrG51Ydsy6lJcRv+P5MYVHzIxlVmJJJNySTfiTzvfUnxjBWW22zmxNc5Qt6r9UAgCzEX111tfzlayzfpyvFO1jSmrSauMGIRO2E4MmyKHcDh+lq0qfr1EX/ADMAfdJu8+0BicXVqLqubJTtzVOqpHjx85WgkagkHtGhkzY2Gz1AbdWn1j7eqPb8JRKPuzZdGW2J6RuBgMpLcqaBR95tW/jvm6lVu7gugw6KR1m6zeLcB5Cw8pazhV55zbOzQhhBIWEISouCEIQDhluCDwM8m3y2MabOoHo3amfWU8R5fhPWpUbw7M+kUur+sTVO/tHn8psaat6c9+Ga+opZx25R4e1Bgqv9luBHLuMRBNC2HCM1Nl6jk2BHot9pD2do85V4vAmmbjVDwPZ3Gd2M0ziyg0R0EfRZwgjyCSZFDtOo6qyqzBXK51UkBspuua3Gx1j7Yio+fPUds5QvmdjnKWy5tdbW05aRlFjqrK5Qi3dotUpJWuS9o4w1zSUKVp0KeSkhcu2pu7E9pso7gsYJYqqlmKqSyrmOUMRYkLwvbnFVZ2FkFCMVZIk5Sk7s6TE1VKMtRwUUqhDsMiniFF9BpFGJqhzV6Wp0hFjUzkvbsv2d0AkMkxhDmyGcuzkYmqHNUVKnSHjUzsXItYDN2d05OJq5+l6WoatrdIXYuBa1geQ7p0VnDLMqEOkHOXZy2MrFlc1qpdM+VjUYsub07G+l+6RlquoRVdwtNsyKGICNa2YC/G3OPMsadZJQgvBFzl2M4iozszOzMxNyzMWJ0A1J7gJGcSSwjTCWRstkVy33ZFcRsiPuJO2FsSpjamROqi61Kh9FF/FuwTMpKEXKT2EYuTsipIm93I2JmdQw0Wz1Dyv9lP47DImJpU69WlSw6/zfDXSjzNaoxGaoe3UAX7p6TsbZww9IJoXOrt2sfw5TnanU2h02b2noXn/CLIRYkWck6oQhCAEIQgBEMWEAx+9mwg4asi3v+sUcdPtr3iZClrdHsdPJx2/lPXZjd493LXq0QcvFkXip9ZPlN/TajbCT+jNGvQ3zj90YfFbLK9ancrzXiw8O0SGomiw9TkePI8m+R7ouI2clTX0X9YcD4idFVbbM0XTvuiiQR5BHa+BqU/SXT1l1X8pwok8k+CvFrkcVY4FiIJ2BI3JABC06AhaYuZGys4ZY8ROWEyjBFcRlhJLiMuJJEWRnEZcS0wey62INqSFh63ooPFjNXsvdOjQHS4p1cqLkHq0U8b+l5+yVz1EIfXonChKf0MxsDderjCHa6UL6uRq/cgPHx4S22pj6YT6Dgerh00r1UNzUPNFb7V+beXCO7Z28+KvRw90w/otUAyvVHDKg5Ly75ebs7timFqVVAtbJT5L+03f3TUqVH86n2X/TZhTu8af3Y9upsMUVWq62fLZFt+rX5maeJFnNnNzlkzowgoKyFhCEiTCEIQAhCEAIQhACJaLOGcCAZ3bm7S1bvSsrnUrwV/ke+ZUs9FilVWBHG4s3j+0O+ekGrIOPo0qy5aiBhyPBl8Dym1S1Lj7Zbr/ZrVNOpO8dmZOk4YXBBEbqbNpvrbKe1NPdwj2M2I1MlqD5h6p6r/JvdIiY90OWon/i3sOhm3GSlvBmrKLW0kNvsZx6DK3ceqflGH2fVXjTbxUZh7pcUdo0zxa33hb8paYR0bUMp8CJl1Zx5RhUovhmPNFxxRh4qRDo29VvYZuqi2jQvMLUPoz6C7MUuGqNwRz4I3yj6bIxD8KZHe5C/HWa8uBxI8zaNVMfST0qiD/Fc+6PXm+EPRguWUFHdeo3puq9ygsfwltg93cNT1KF27XNx/l4e28axG8VNdKaO5/yL7Tr7pV19o4nEHKpKqfsUgQfNzr8JF+rLl2RlelF7K7L/aG2qGGGT0nA0pUwCw8eS+czVZsTtBwrAlb3Wil+jX9pzz8TLHZm7o41WyjiUTVj4ty981mCWlSXLTRVXsA495POUurTpfHeXZaqU6ny2XRC2Ju6tCzvZqg4adVPujt75fRoVY4GBmpOcpO8mbUIKCsjuEISJMIQhACEIQAhCEAIQhAOWkdpKnJUGAQKl5Dqgy3NERtsPAM7XDSrxNNjxF/GbBsHflI77OB5TKbRhq5ga1FhwWMpXdD6B8pvX2SDyjD7FU8paq9RbXKnRg/Biqm0SeKuPD8jGvpn7z/7fObVtgr2RP5AX1ZNaqa8L8EXpovv8mJ+kA/Yc+I+ZnaFjwS3s/CbVdgr2R1NjKOUPVVH5C01NeDIUKDHistsMjDQCw7tJoE2UByj6bOA5SmVScuWWqEY8Iq6AaT6QMmJg7co+uGtIEyOl5ISOCkJ2FAgAs6hCAEIQgBCEIAQhCAEIQgBCEIAQjYcElbi4AJW+oBvYkd9j7DHIAQhEvAC0Sw7J1G2qKCASAWNlBNiTYmw7dAT5QDrKOwQyjsEWF4AmUdghYTqJAC0WEIAQiXiwAhCEAIQhACEIQAhCEAIQhACEIQAkPaefoamRmV8jZWVDUZTbQhB6R7pMiQDI01xRdqyCsrGlhFs6A9L9dVDFrqCLKwNrKRmFxOTUxVU4cv9KVaRw3SlaNm6TLUWqwGQlhmKaqMtjcaazYQgGOpfS06NEeuqdJXzs+HaqS/TKUXqgWQoWObhe+osBJSvil6JmfEMXxNUNTWkAMn0gqhzBCFUIA3WtmHO805hAMbTOKpIqIcTcHEZb0g2ar0qlFc5dKZUk5uGrdYWAi4n6Y/RMq1TiKeIrsyvTAooOirqvRvYBrqVAJJF2F7aibGJ8oBSY7FVCKGT6StPMRVZaJNe+QFAVKHQk6sBYEWuNbVxrY5mCg1wTVUVj0ShaYOJUDomK2ZeiLEnrWsL2Ok1sIBRbGbE52FVqjK1FWBdFUK/SVFIFgOKhDY+POJtxP5tTWvTNd7oGCUXekXykF2prmOQXLBddQvMXl9CAYrB4FlxKvlxBtYdIaTq5ojCquY1CMy9cH6rjm1treNphr01VsPiGpoMatFGo1A6VHrl6L2cBgShFnPom9yCZuYQDFjYlW9YuTZEvUqdEz1MU7Mrmm4BvVRQMotb0rDgYDCYql0Aya0+vSw6Uy+HWpUc5kLA2phENlJNhmNr6CbMxYBiNm7PxILpTp2WoiDE9JnwtyHcsquEY1XIIBqerwN+Gj3fp1FwmFWouWouHohkvcqQigg3A17e+WcWALCEIAQhCAEIQgH/2Q==" alt="My Account">
+            </div>
+        </nav>
+</head>
+<body>
+<form action="products">
+    <!-- <section>
+    	<div class="center slick-initialized slick-slider slick-dotted">
+    		<div class="slick-list draggable" style="padding: 0px 40px;">
+    			<div class="slick-track" style="opacity: 1; width: 2520px; transform: translate3d(-1050px, 0px, 0px);">
+    				<img src="https://imgur.com/96OnkX7.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="-4" aria-hidden="true" tabindex="-1">
+    				<img src="https://imgur.com/KtGxwnN.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="-3" aria-hidden="true" tabindex="-1">
+    				<img src="https://imgur.com/sfjg9R8.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="-2" aria-hidden="true" tabindex="-1">
+    				<img src="https://imgur.com/p0wdadG.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+    				<img src="https://imgur.com/96OnkX7.png" class="slick-slide" style="width: 50px;" data-slick-index="0" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+    				<img src="https://imgur.com/KtGxwnN.png" class="slick-slide slick-active" style="width: 50px;" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+    				<img src="https://imgur.com/sfjg9R8.png" class="slick-slide slick-current slick-active slick-center" style="width: 50px;" data-slick-index="2" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
+    				<img src="https://imgur.com/p0wdadG.png" class="slick-slide slick-active" style="width: 50px;" data-slick-index="3" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03">
+    				<img src="https://imgur.com/96OnkX7.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="4" aria-hidden="true" tabindex="-1">
+    				<img src="https://imgur.com/KtGxwnN.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="5" aria-hidden="true" tabindex="-1">
+    				<img src="https://imgur.com/sfjg9R8.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="6" aria-hidden="true" tabindex="-1">
+    				<img src="https://imgur.com/p0wdadG.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="7" aria-hidden="true" tabindex="-1">
+    			</div>
+    		</div>
+    		<ul class="slick-dots" style="" role="tablist">
+    			<li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 2" tabindex="-1">1</button></li>
+    		<li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 2" tabindex="-1">2</button></li>
+    		<li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 2" tabindex="0" aria-selected="true">3</button></li>
+    		<li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 2" tabindex="-1">4</button></li>
+    		</ul></div>
+    </section> -->
+    	<!-- <section>
+    		<div class="center slick-initialized slick-slider slick-dotted">
+    			<div class="slick-list draggable" style="padding: 0px 40px;">
+    				<div class="slick-track" style="opacity: 1; width: 2520px; transform: translate3d(-1260px, 0px, 0px);">
+    					<img src="https://imgur.com/96OnkX7.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="-4" aria-hidden="true" tabindex="-1">
+    					<img src="https://imgur.com/KtGxwnN.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="-3" aria-hidden="true" tabindex="-1">
+    					<img src="https://imgur.com/sfjg9R8.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="-2" aria-hidden="true" tabindex="-1">
+    					<img src="https://imgur.com/p0wdadG.png" class="slick-slide slick-cloned slick-center" style="width: 50px;" data-slick-index="-1" aria-hidden="true" tabindex="-1">
+    					<img src="https://imgur.com/96OnkX7.png" class="slick-slide" style="width: 50px;" data-slick-index="0" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide00" aria-describedby="slick-slide-control00">
+    					<img src="https://imgur.com/KtGxwnN.png" class="slick-slide" style="width: 50px;" data-slick-index="1" aria-hidden="true" tabindex="-1" role="tabpanel" id="slick-slide01" aria-describedby="slick-slide-control01">
+    					<img src="https://imgur.com/sfjg9R8.png" class="slick-slide slick-active" style="width: 50px;" data-slick-index="2" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide02" aria-describedby="slick-slide-control02">
+    					<img src="https://imgur.com/p0wdadG.png" class="slick-slide slick-current slick-active slick-center" style="width: 50px;" data-slick-index="3" aria-hidden="false" tabindex="0" role="tabpanel" id="slick-slide03" aria-describedby="slick-slide-control03">
+    					<img src="https://imgur.com/96OnkX7.png" class="slick-slide slick-cloned slick-active" style="width: 50px;" data-slick-index="4" aria-hidden="false" tabindex="-1">
+    					<img src="https://imgur.com/KtGxwnN.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="5" aria-hidden="true" tabindex="-1">
+    					<img src="https://imgur.com/sfjg9R8.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="6" aria-hidden="true" tabindex="-1">
+    					<img src="https://imgur.com/p0wdadG.png" class="slick-slide slick-cloned" style="width: 50px;" data-slick-index="7" aria-hidden="true" tabindex="-1">
+    				</div>
+    			</div>
+    			<ul class="slick-dots" style="" role="tablist">
+    				<li class="" role="presentation"><button type="button" role="tab" id="slick-slide-control00" aria-controls="slick-slide00" aria-label="1 of 2" tabindex="-1">1</button></li>
+    				<li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control01" aria-controls="slick-slide01" aria-label="2 of 2" tabindex="-1">2</button></li>
+    				<li role="presentation" class=""><button type="button" role="tab" id="slick-slide-control02" aria-controls="slick-slide02" aria-label="3 of 2" tabindex="-1">3</button></li>
+    				<li role="presentation" class="slick-active"><button type="button" role="tab" id="slick-slide-control03" aria-controls="slick-slide03" aria-label="4 of 2" tabindex="0" aria-selected="true">4</button></li>
+    			</ul>
+    		</div>
+        </section> -->  
+   <main>
+  <!-- 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888 -->
+   <section id="features">
+      <!-- Icon Conatiner -->
+      <div class="icon-container">
+        <!-- Image Wrapper -->
+        <div class="img-wrapper">
+          <!-- Image -->
+          <img src="https://shoplane.netlify.app/img/icon1.png" alt="freedelivery">
+        </div>
+        <!-- Icon Text  -->
+        <h4>Free Delivery</h4>
+      </div>
+      <!-- Icon Conatiner -->
+      <div class="icon-container">
+        <!-- Image Wrapper -->
+        <div class="img-wrapper">
+          <!-- Image -->
+          <img src="https://shoplane.netlify.app/img/icon2.png" alt="moneybackguarrente">
+        </div>
+        <!-- Icon Text  -->
+        <h4>Money Back Gurantee</h4>
+      </div>
+      <!-- Icon Conatiner -->
+      <div class="icon-container">
+        <!-- Image Wrapper -->
+        <div class="img-wrapper">
+          <!-- Image -->
+          <img src="https://shoplane.netlify.app/img/icon3.png" alt="support">
+        </div>
+        <!-- Icon Text  -->
+        <h4>Always Support</h4>
+      </div>
+      <!-- Icon Conatiner -->
+      <div class="icon-container">
+        <!-- Image Wrapper -->
+        <div class="img-wrapper">
+          <!-- Image -->
+          <img src="https://shoplane.netlify.app/img/icon4.png" alt="securepayement">
+        </div>
+        <!-- Icon Text  -->
+        <h4>Secure Payment</h4>
+      </div>
+    </section>
+        <section class="section">
+            <h3 class="section-heading">Clothing for Men and Women</h3>
+
+            <div id="clothing-grid" class="product-grid">
+                <!-- <div class="product-card">
+                    <img class="preview-image" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg" alt="Men Navy Blue Solid Sweatshirt" />
+
+                    <div class="product-info-wrapper">
+                        <h3 class="product-name">Men Navy Blue Solid Sweatshirt</h3>
+                        <p class="product-brand">United Colors of Benetton</p>
+                        <p class="product-price">Rs 2599</p>
+                    </div>
+                </div> -->
+            </div>
+
+        </section>
+
+        <section class="section">
+            <h3 class="section-heading">Accessories for Men and Women
+            </h3>
+
+            <div id="accessory-grid" class="product-grid">
+                <!-- <div class="product-card">
+                    <img class="preview-image" src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/7579188/2018/11/5/08a7b230-ee8f-46c0-a945-4e835a3c01c01541402833619-United-Colors-of-Benetton-Men-Sweatshirts-1271541402833444-1.jpg" alt="Men Navy Blue Solid Sweatshirt" />
+
+                    <div class="product-info-wrapper">
+                        <h3 class="product-name">Men Navy Blue Solid Sweatshirt</h3>
+                        <p class="product-brand">United Colors of Benetton</p>
+                        <p class="product-price">Rs 2599</p>
+                    </div>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div>
+            <p class="footer-heading">Online Store</p>
+            <a href="/" class="footer-link">Men Clothing</a>
+            <a href="/" class="footer-link">Women Clothing</a>
+            <a href="/" class="footer-link">Men Accessories</a>
+            <a href="/" class="footer-link">Women Accessories</a>
+        </div>
+        <div>
+            <p class="footer-heading">Helpful Links</p>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/" class="footer-link">About</a>
+            <a href="/" class="footer-link">Contact</a>
+        </div>
+        <div>
+            <p class="footer-heading">Partners</p>
+            <a href="/" class="footer-link">Zara</a>
+            <a href="/" class="footer-link">Pantaloons</a>
+            <a href="/" class="footer-link">Levis</a>
+            <a href="/" class="footer-link">UCB</a>
+            <a href="/" class="footer-link">+ Many More</a>
+        </div>
+        <div>
+            <p class="footer-heading">Address</p>
+            <p href="/" class="footer-link">Building 101</p>
+            <p href="/" class="footer-link">Central Avenue</p>
+            <p href="/" class="footer-link">LA - 902722</p>
+            <p href="/" class="footer-link">United States</p>
+        </div>
+    </footer>
+</form>
+<script src="dpg.js"> </script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <!---<title>Registration Form </title>--->
+<!--     <link rel="stylesheet" href="r1.css"> -->
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--      <script type="text/javascript">
+     function display(){
+    	 var user= document.getElementById("usname").value;
+    	 alert("UserName is "+user);
+     }
+    	 
+     </script> -->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+     
+   </head>
+<body>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(blue, pink, red, yellow) ;
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid red;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   background: skyblue;
+ }
+ form .button input:hover{
+  background: purple;
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon{
+  height:46px;
+  width: 46px;
+  border: 1px solid #333;
+  margin: 0 0.45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.6rem;
+  border-radius: 44%;
+  transition: all 0.4s;
+}
+
+.social-icon:hover{
+  color: #20dbc2;
+  border-color: linear-gradient(blue, pink, red, yellow) ;
+/*   border-bottom-width: 5px; */
+}
+
+</style>
+
+  <div class="container">
+    <div class="title">Register 'N' ReMake..</div>
+    <div class="content">
+      <form action="register" method="post">
+        <div class="user-details">
+<!--           <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" >
+          </div> -->
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" id="usname" name="name" >
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" >
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="number" placeholder="Enter your number" name="number" >
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" name="password">
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="password" placeholder="Confirm your password" name="cnfpass">
+          </div>
+        </div>
+
+        <div class="button">
+          <input type="submit" value="Register"> <!-- onclick="display() -->
+        </div>
+        		<div class="social-media">
+				<a href="#" class="social-icon">
+				<i class="fab fa-facebook-f"></i>
+				</a>
+				<a href="#" class="social-icon">
+				<i class="fab fa-twitter"></i>
+				</a>
+				<a href="#" class="social-icon">
+				<i class="fab fa-google"></i>
+				</a>
+				<a href="#" class="social-icon">
+				<i class="fab fa-linkedin"></i>
+				</a>
+				</div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
